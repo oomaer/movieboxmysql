@@ -1,0 +1,21 @@
+.bi-x-lg{
+  color: var(--logo-lbl-bg);
+  cursor: pointer;
+}
+
+.bi-x-lg:hover{
+  transform: scale(1.1);
+  filter: brightness(120%);
+}
+
+@media only screen and (max-width: 1026px){
+    .bi-x-lg{
+      color:antiquewhite;
+      width: 20px;
+      height: 20px;
+      margin-right: .5rem;
+    }
+    .bi-x-lg:hover{
+      color: var(--logo-lbl-bg);
+    }
+}

@@ -1,0 +1,10 @@
+.homepage-container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.homepage-content{
+    flex-grow: 1;
+}
+

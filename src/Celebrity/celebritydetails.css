@@ -1,0 +1,137 @@
+.celebrity-details-container{
+    display:flex;
+    justify-content: center;
+    background: #0d1117;
+}
+.celebrity-details-content{
+    display: flex;
+    flex-direction: column;
+    background:#131722;
+    
+}
+.celebritycard-imageanddetails{
+    display: flex;
+    background:#131722;
+}
+
+.celebrity-details-content h1{
+    margin-bottom: 0;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid gray;
+}
+
+.celebritycard-container{
+    margin: 2rem 8rem 2rem 4rem;
+}
+
+.celebritycard-content{
+    display:flex;
+    justify-content: space-between;
+    font-family: var(--home-cover-fontfamily);
+}
+
+.celebritycard-image-container{
+    margin-right: 1rem;
+}
+
+.celebritycard-image-container img{
+    height: 15rem;
+    width: 9rem;
+    object-fit: cover;
+}
+.celebritycard-image-container img:hover{
+    filter: brightness(0.7);
+}
+
+.celebritycard-details{
+    display:flex;
+    flex-direction: column;
+}
+
+#celebritycard-details-releasedate{
+    color: #b3b5b8;
+}
+#celebritycard-details-gender, #celebritycard-details-department{
+    color: #b3b5b8;
+    margin-top: 1rem;
+}
+
+.celebritycard-titleandrating{
+    display: flex;
+    justify-content: space-between;   
+}
+.celebritycard-titleandrating a{
+    text-decoration: none;
+}
+#celebritycard-details-title{
+    margin: 0;
+    width: fit-content;
+    color: white;
+}
+#celebritycard-details-title:hover{
+    color: #24baef;
+}
+#celebritycard-details-rating{
+    color: #f5c518;
+    font-size: bold;
+    min-width: 27px;
+    margin-top: 1rem;
+}
+#celebritycard-details-editbtn{
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 0.7rem 0rem;
+    width: 7rem;
+    font-weight: bold;
+    background: var(--content-card-topbar-bg);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: var(--home-cover-heading-fontfamily);
+}
+#celebritycard-details-editbtn:hover{
+    border: 1px solid var(--content-card-topbar-bg);
+    color: var(--content-card-topbar-bg);
+    background: none;
+}
+
+
+
+.celebrity-details-biography{
+    margin: 2rem 8rem 2rem 4rem;
+}
+#celebritycard-detail-overview{
+    max-width: 30rem;
+    color:#b3b5b8;
+}
+
+
+.celebrity-details-pictures-content{
+    margin: 2rem 8rem 2rem 4rem;
+    display:flex;
+    flex-wrap:wrap
+}
+
+.celebrity-details-picture-container{
+    margin: 1rem;
+}
+.celebrity-details-picture-container img{
+    height: 15rem;
+    width: 9rem;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 750px){
+    .celebritycard-container{
+        margin-right: 4rem;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .celebritycard-container, .celebrity-details-biography, .celebrity-details-pictures-content{
+        margin: 2rem 2rem;
+    }
+}
+

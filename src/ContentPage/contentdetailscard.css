@@ -1,0 +1,271 @@
+
+.content-details-card-container{
+    display:flex;
+    justify-content: center;
+    background: var(--content-card-container-bg);
+}
+
+.content-details-card{
+    width: 80%;
+    position: relative;
+    top: -15vh;
+    font-family: var(--drop-down-fontfamily);
+    margin-bottom: -15vh;
+    box-shadow: rgba(3, 9, 10, 0.56) 0px 22px 70px 4px;
+}
+
+.content-details-card-topbar{
+    height: 4rem;
+    background-color: var(--content-card-topbar-bg);
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--home-cover-heading-fontfamily);
+    
+}
+
+.content-details-card-topbar-left{
+    margin-left: 19rem;
+    display: flex;
+    align-items: center;
+}
+
+.content-details-card-topbar-left div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    font-size: 105%;
+}
+
+.contentdetailscard-topbar-left-btmlbl{
+    font-size: 85%;
+}
+
+#contentdetailscard-topbar-releasedate{
+    color: var(--content-card-topbar-fg2);
+}
+#content-details-card-topbar-left-rating{
+    font-size: 120%;
+}
+#content-details-card-topbar-left-rating span{
+    font-size: 80%;
+    color: var(--content-card-topbar-fg2);
+}
+.content-details-card-topbar-right{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.content-details-card-topbar-right a{
+    color: var(--content-card-topbar-fg);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.content-details-card-body{
+    background-color: var(--content-card-body-bg);
+    color: var(--content-card-body-fg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.content-details-card-body-details{
+    width: 70%;
+
+}
+.card-body-details-topdetails{
+    display: flex;
+}
+
+#content-main-image{
+    width: 14rem;
+    height: 21rem;
+    position: relative;
+    margin: 2rem;
+    top: -5rem;
+    margin-bottom: 0;
+    box-shadow: 0 10px 20px -6px black;
+}
+#content-details-card-overview{
+    margin: 3rem 1rem 3rem 0.5rem;
+    font-family: var(--content-overivew-fontfamily);
+    color: rgb(241, 240, 240);
+    font-size: 105%;
+}
+.content-details-card-body-pictures{
+    background-color: var(--content-card-body-pictures-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.content-details-card-body-pictures img{
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.card-details-overview-stars-crew{
+    display:flex;
+    flex-direction: column;
+}
+
+.card-details-overview-stars-crew div{
+    margin: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-details-overview-stars-crew-crew label, .card-details-overview-stars-crew-stars label{
+    white-space: pre;
+}
+
+.contentdetails-fg2{
+    color: var(--content-card-body-fg2);
+}
+
+.contentcard-contentdetails-otherdetails{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.contentdetails-otherdetails-member{
+    border-top: 2px solid var(--content-card-body-pictures-bg);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.contentdetails-otherdetails-member:nth-last-child(1){
+    border-bottom: 2px solid var(--content-card-body-pictures-bg);   
+}
+.contentdetails-block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.contentdetails-contentelement{
+    margin: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contentdetails-contentelement label{
+    white-space: pre;
+    color: var(--content-card-body-fg2);
+}
+.contentdetails-contentelement h4{
+    white-space: pre;
+    font-weight: lighter;
+    margin: 0;
+
+}
+.contentdetails-otherdetails-seasons{
+    padding: 2rem;
+    background: #161b22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contentdetails-seasondetails-container{
+    display: flex;
+    align-items: flex-end;
+    width: 30rem;
+    height: 24rem;
+    margin: 1rem 2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+.contentdetails-seasondetails-details{
+    display: flex;
+    flex-direction: column; 
+    padding: 1rem;
+    align-items: center;
+    background: rgb(0,0,0,0.6);
+    flex-grow: 1;
+}
+
+#contentdetails-seasondetails-overview{
+    padding: 1rem;
+    color: black;
+    opacity: 0.5;
+    display: none;
+    visibility: hidden;
+    background-color: white;
+    transition: visibility 1s, opacity 0.5s linear;
+}
+
+.contentdetails-seasondetails-container:hover > #contentdetails-seasondetails-overview{
+    display:block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.contentdetails-seasondetails-container:hover > .contentdetails-seasondetails-details{
+    display: none;
+}
+
+.contentdetails-otherdetails-seasons svg {
+    height: 25px;
+    width: 25px;
+}
+.contentdetails-otherdetails-seasons svg:hover{
+    color:red;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1209px){
+    .content-details-card-body-details{
+        width: auto;
+    }
+    .content-details-card-body{
+        flex-direction: column;
+    }
+    .content-details-card-body-pictures{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1070px){
+    .content-details-card{
+        width: auto;
+    }
+    #content-main-image{
+        position: inherit;
+        margin: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .content-details-card-topbar-left{
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .content-details-card-topbar-right{
+        display: none;
+    }
+    .content-details-card-topbar{
+        justify-content: center;
+    }
+
+    .card-body-details-topdetails{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1.5rem;
+    }
+
+    .contentdetails-seasondetails-container{
+        width: 100%;
+        height: 100%;
+    }
+}

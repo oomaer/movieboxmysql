@@ -1,0 +1,128 @@
+.add-content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--settings-bg);
+    color: var(--settings-fg);
+}
+
+.add-content-main{
+    width: 1000px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.add-content-details-content-header{
+    display: flex;
+    align-items: center;
+}
+
+.add-content-details-content-header h1{
+    color: black;
+    margin: 1rem 1rem ;
+    padding: 0rem 0.2rem; 
+    margin-right: 1rem;
+}
+.add-content-inputs{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding:2rem 2rem;
+    border-radius: 2%;
+    
+}
+
+.add-content-inputs label{
+    color: rgb(65, 64, 64);
+}
+
+.add-content-inputs input, .add-content-inputs select{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: 1px solid lightslategray;
+    color: rgb(48, 55, 61);
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    max-width: 350px;
+    margin-bottom: 1rem;
+}
+
+.add-movie-details, .add-tvshow-details {
+    display: flex;
+    flex-direction: column;
+}
+
+#overview-textarea{
+    height: 7rem;
+    width: 35rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.add-content-btn{
+    transition-duration: 0.4s;
+    width: 8rem;
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: #4CAF50;
+    border: 1px solid #4CAF50;
+    color:white;
+    cursor: pointer;
+}
+
+.add-content-btn:hover{
+    background: none;
+    color: black;  
+}
+#add-content-status-msg{
+    margin: 1rem;
+    color: red;
+    animation: blinker 1s linear infinite;
+}
+#addmoredetailsbtn{
+    cursor: pointer;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@media only screen and (max-width: 690px){
+    #movie-overview{
+        width: 25rem;
+    }
+    .add-content-inputs input, .add-content-inputs select,.add-content-inputs label{
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .add-content-inputs{
+        padding: 1rem 0.4rem;
+    }
+    #movie-overview{
+        width: 20rem;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 359px){
+    :root{
+        font-size: 80%;
+    }
+    .add-content-main{
+        padding: 0.2rem;
+    }
+}
+@media only screen and (max-width: 320px){
+    :root{
+        font-size: 65%;
+    }
+}

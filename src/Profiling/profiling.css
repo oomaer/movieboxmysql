@@ -1,0 +1,125 @@
+
+.background{
+    background-image: var(--signup-signin-bg-image);
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.card{
+    
+    background-color: var(--registration-card-color);
+    font-family: var(--registration-card-font-family);
+    display: flex;
+    border-radius: 3%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem 5rem;
+    margin-left: 10rem;
+    
+}
+
+.input{
+    margin-bottom: 1rem;
+    width: 16rem;
+    background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+
+}
+
+.input:active{
+    transform: scale(1.04);
+}
+
+.headinglbl{
+    align-self: center;
+    margin-bottom: 3rem;
+}
+
+.clickbtn {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+.clickbtn:hover, .input:hover {
+    transform: scale(1.04);
+}
+
+.clickbtn:active {
+	transform: scale(0.95);
+}
+
+.clickbtn:focus {
+	outline: none;
+}
+
+.clickbtn.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+.signinbtn{
+    margin-bottom: 1rem;
+}
+.reflink{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.reflink:hover{
+    color: blue;
+}
+
+.reflabel{
+    align-self: flex-end;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.statuslbl{
+    color: #ff0033;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .background{
+        justify-content: center;
+    }
+    .card{
+        font-size: 90%;
+        padding: 1rem 2rem;
+        margin-left: 0;
+    }
+    .input{
+        width:  15rem;
+    }
+  }
+
+@media only screen and (max-width: 320px) {
+
+    .card{
+        padding: 1.5rem 1.5rem;
+        font-size: 80%;
+    }
+    .input{
+        width: 13rem;
+    }
+  }

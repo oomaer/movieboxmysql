@@ -1,0 +1,206 @@
+.profile-settings-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--settings-bg);
+    color: var(--settings-fg);
+}
+
+.profile-settings-content{
+    width: 1000px;
+    height: calc(100vh - 23rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--settings-fontfamily);
+    padding: 3rem 2rem;
+    background-color: var(--settings-profilecontent-bg);
+}
+
+.profile-details{
+    flex:1;
+}
+
+.profile-details-header{
+    margin: 0rem 1rem ;
+    padding: 0rem 0.2rem; 
+    display: flex;
+    align-items: center;
+}
+
+.profile-lbls{
+    margin: 0rem 3rem ;
+    padding: 1rem;
+    padding-right: auto; 
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--settings-lbls-border-color);
+    border-radius: 3%;
+}
+
+div.profile-lbls>*{
+    font-size: 110%;
+}
+
+div.profile-lbls>*{
+    font-size: 110%;
+}
+
+.editprofileinput{
+    margin-bottom: 1rem;
+    width: 16rem;
+    color: var(--settings-input-fg);
+    background: none;
+	border-radius: 3%;
+	padding: 3px 6px;
+    border: none;
+}
+
+div.profile-lbls>input{
+    pointer-events: none;
+}
+div.profile-lbls>input:active{
+    transform: scale(1.04);
+}
+div.profile-lbls>input:hover{
+    transform: scale(1.04);
+}
+
+.bi-pencil-fill{
+    margin-left: 1rem;
+    height: 15px;
+    width: 15px;
+}
+
+#click-changepass{
+    font-size: 90%;
+    color: blue;
+    text-decoration: underline;
+    width: 8rem;
+    cursor: pointer;
+}
+
+#confirmpasslbl{
+    margin-top: 3rem;
+}
+
+#edit-namelbl{
+    margin-top: 0;
+}
+
+#save-changes-btn{
+    cursor: pointer;
+    width: 7rem;
+    height: 2rem;
+    font-size: 80%;
+    transition: 0.4s;
+    background: var(--settings-confirmbtn-bg);
+    color: var(--settings-confirmbtn-fg);
+    border: 1px solid var(--settings-confirmbtn-bg);
+}
+#save-changes-btn:hover{
+    background:var(--settings-confirmbtn-bg-hover);
+    color: var(--settings-confirmbtn-fg-hover);
+}
+.commit-changes{
+    display: flex;
+    align-items: center;
+}
+#seteditable, #check-changepass{
+    display: none;
+}
+
+#statusmsglbl{
+    color: var(--settings-statusmsg-fg);
+    font-family: var(--settings-statusmsg-fontfamily);
+    margin-left: 1rem;
+}
+
+.hidden-settings{
+    display: none;
+}
+.new-password{
+    display: none;
+}
+div.new-password > input{
+    background: var(--settings-input-bg);
+}
+
+#seteditable:checked ~ .hidden-settings{
+    display: flex;
+    flex-direction: column;
+}
+#seteditable:checked ~ input{
+    pointer-events: all;
+    background-color: var(--settings-input-bg);
+}
+#seteditable:checked ~ .hidden-settings>input{
+    pointer-events: all;
+    background-color: var(--settings-input-bg);
+}
+
+#check-changepass:checked ~ .new-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.help, .feedback{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: var(--settings-helpcard-bg);
+    font-family: var(--registration-card-font-family);
+    display: flex;
+    border-radius: 3%;
+    justify-content: center;
+    font-size: 80%;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+}
+
+.help{
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1000px){
+    .profile-settings-content{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+
+    .profile-settings-content{
+        padding: 2rem 0.5rem;
+        flex-direction: column;
+        height: auto;
+    }
+    .profile-details .profile-lbls{
+        margin: 1.2rem;
+    }
+    .help .feedback{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    :root{
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width: 320px){
+    :root{
+        font-size: 75%;
+    }
+}
+@media only screen and (min-height: 1080px){
+    .profile-settings-content{
+        height: calc(1080px - 207px - 48px);
+    }
+}
+
+@media only screen and (max-height: 655px){
+    .profile-settings-content{
+        height: auto;
+    }
+}

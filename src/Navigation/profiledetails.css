@@ -1,0 +1,62 @@
+.profile-details-btn{
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+#username{
+    margin: 0 0.7rem 0.1rem 0.7rem;
+    color: var(--profile-icon-name-color);
+}
+
+#downarrowsymbol{
+    font-size: 60%;
+}
+
+.bi-person-circle{
+    color: var(--profile-icon-fg);
+    padding-left: 0.4rem;
+}
+
+.profile-details-item{
+    display: flex;
+    align-items: center;
+}
+
+.profile-details-items{
+    position:absolute;
+    right: auto;
+    top: 3rem;
+    z-index:1;
+    overflow:hidden;
+    height:0;
+    -webkit-transition: 200ms ease-in;
+    -moz-transition:height 200ms ease-in;
+    -o-transition:height 200ms ease-in;
+    transition:height 200ms ease-in;
+    background: rgba(92, 92, 92, 0.329);
+    font-family: var(--profile-details-font-family);
+
+}
+
+.profile-details:hover .profile-details-items {
+    height: 7.2rem;
+}
+
+.profile-details-itemlbl{
+    padding: 0 0.2rem 0 0.7rem;
+    color: var(--profile-items-lbl-color);
+}
+
+.profile-details-item{
+    padding: 0.6rem 0.8rem;
+    /* padding-left: 0.4rem; */
+}
+
+.profile-details-item:hover{
+    background-color: var(--profile-item-hover-color);
+}
+
+.bi-arrow-left-square-fill, .bi-bar-chart-line-fill, .bi-gear-fill{
+    color: var(--profile-items-icon-color)
+}

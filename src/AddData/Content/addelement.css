@@ -1,0 +1,93 @@
+.add-content-element-container{
+    display: flex;
+}
+.add-content-element-content{
+    flex-grow:1;
+}
+.add-content-element-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.added-element-card{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0.1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.3rem;
+    max-width: fit-content;
+}
+.added-element-card-name{
+    margin-right: 0.5rem;
+    max-width: 7rem;
+    overflow: hidden;
+    max-height: 25px;
+}
+.added-element-card-cross{
+    cursor: pointer;
+    color: red;
+}
+.added-element-card-cross:hover{
+    transform: scale(1.5);
+}
+
+.input-element-details{
+    display: flex;
+}
+
+.input-element-details input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: 1px solid lightslategray;
+    color: rgb(48, 55, 61);
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    max-width: 237px;
+}
+
+.input-element-details button{
+    margin-left: 0.2rem;
+    width: 4rem;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+.input-element-details button:hover{
+    background-color: white;
+    border: 1px solid #4CAF50;
+    color: black;
+}
+
+.input-element-tvdetails{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-element-tvdetails input{
+    margin-bottom: 0.5rem;
+}
+.input-element-tvdetails textarea{
+    margin-bottom: 0.5rem;
+    height: 5rem;
+    width: 70%;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 430px){
+    .input-element-tvdetails textarea{
+        width: auto;
+    }
+}

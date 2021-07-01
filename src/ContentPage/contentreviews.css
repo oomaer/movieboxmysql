@@ -1,0 +1,175 @@
+.content-reviews-container{
+    display:flex;
+    justify-content: center;
+    background: #0d1117;
+}
+.content-reviews-content{
+    display: flex;
+    flex-direction: column;
+    background:#131722;
+    
+}
+
+.content-reviews-content h1{
+    margin-bottom: 0;
+    margin-left: 2rem;
+
+}
+
+#fetchedreviewscount{
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid gray;
+    padding-left: 2rem;
+}
+
+.content-reviews-content ul{
+    list-style: none;
+    padding: 0;
+}
+
+.current-user-review{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid gray;
+    margin: 0rem 8rem 0rem 4rem;
+    font-family: var(--home-cover-fontfamily);
+}
+.current-user-review button{
+    width: 5rem;
+    padding: 0.3rem 1rem;
+    margin-top: 0.5rem;
+    background: var(--content-card-topbar-bg);
+    font-family: var(--home-cover-heading-fontfamily);
+    color: white;
+    border: 1px solid var(--content-card-topbar-bg);
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+.current-user-review button:hover{
+    color: var(--content-card-topbar-bg);
+    background:none;
+}
+.currentuser-review-inputs{
+    display:flex;
+    justify-content: space-between;
+}
+#currentuser-review-input-textarea{
+    flex-grow: 1;
+    height: 5rem;
+    border-radius: 5px;
+    border: 0.1px solid gray;
+    background:none;
+    color: white;
+    padding: 1rem;
+    outline: none;
+    width:28rem;
+}
+.current-review-star-rating{
+    display:flex;
+    align-items: center;
+    color: #f5c518;
+}
+.current-user-review-header{
+    display:flex;
+    align-items:center;
+}
+.current-user-review-header label{
+    margin-left: 1rem;
+    display:flex;
+    align-items: center;
+    cursor:pointer;
+}
+.current-user-review-header label:hover{
+    transform: scale(1.1);
+    color: var(--content-card-topbar-bg);
+}
+#currentuser-review-input-rating{
+    background:none;
+    height: 1.5rem;
+    width: 1.13rem;
+    color: #f5c518;
+    font-size: 105%;
+}
+#currentuser-review-input-rating::-webkit-outer-spin-button,
+#currentuser-review-input-rating::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.current-user-review h3{
+    margin: 0;
+}
+.current-user-review #review-date-lbl{
+    margin-bottom: 0.5rem;
+    color: #b3b5b8;
+    font-size: 90%;
+}
+#current-user-review-check ~ div textarea{
+    pointer-events: none;
+    border: none;
+    color: #b3b5b8;
+    height: auto;
+}
+#current-user-review-check ~ div input{
+    pointer-events: none;
+    border:none;
+}
+#current-user-review-check:checked ~ div svg{
+    display:none;
+}
+#current-user-review-check ~ div #confirmeditreviewbtn{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 3rem;
+    display:flex;
+    justify-content: center;
+    padding: 0.3rem 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    background: var(--content-card-topbar-bg);
+    font-family: var(--home-cover-heading-fontfamily);
+    border: 1px solid var(--content-card-topbar-bg);
+    color: white;
+    font-size: 78%;
+    display:none;
+    cursor:pointer;
+}
+.review-editanddelete-btn{
+    display:flex;
+}
+.review-editanddelete-btn button{
+    display: none;
+}
+#current-user-review-check{
+    display: none;
+}
+
+#current-user-review-check ~ div #confirmeditreviewbtn:hover{
+    background:none;
+    color: var(--content-card-topbar-bg);
+}
+#current-user-review-check:checked ~ div input{
+    pointer-events: all;
+    border: 1px solid gray;
+}
+#current-user-review-check:checked ~ div #confirmeditreviewbtn{
+    display:flex;
+}
+#current-user-review-check:checked ~ div button{
+    display:block;
+}
+#current-user-review-check:checked ~ div textarea{
+    pointer-events: all;
+    border: 1px solid gray;
+}
+
+@media only screen and (max-width: 750px){
+    .current-user-review{
+        margin: 2rem 2rem;
+    }
+    #currentuser-review-input-textarea{
+        width: auto;
+    }
+}
+

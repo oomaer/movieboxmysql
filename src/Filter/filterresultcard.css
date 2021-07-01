@@ -1,0 +1,61 @@
+.filterresultcard-container{
+    margin: 2rem 8rem 2rem 4rem;
+}
+
+.filterresultcard-content{
+    display:flex;
+    font-family: var(--home-cover-fontfamily);
+    border-bottom: 1px solid rgb(85, 85, 85);
+    flex-grow: 1;
+}
+
+.filterresultcard-image-container{
+    margin-right: 1rem;
+}
+
+.filterresultcard-image-container img{
+    height: 15rem;
+    width: 9rem;
+    object-fit: cover;
+}
+.filterresultcard-image-container img:hover{
+    filter: brightness(0.7);
+}
+
+#filterresultcard-details-releasedate{
+    color: #b3b5b8;
+}
+
+.filterresultcard-titleandrating{
+    display: flex;
+    justify-content: space-between;   
+}
+.filterresultcard-titleandrating a{
+    text-decoration: none;
+}
+#filterresultcard-details-title{
+    margin: 0;
+    width: fit-content;
+    color: white;
+}
+#filterresultcard-details-title:hover{
+    color: #24baef;
+}
+#filterresultcard-details-rating{
+    color: #f5c518;
+    font-size: bold;
+    min-width: 27px;
+}
+#filterresultcard-detail-overview{
+    max-width: 30rem;
+    color:#b3b5b8;
+}
+
+
+
+@media only screen and (max-width: 750px){
+    .filterresultcard-container{
+        margin: 2rem 2rem;
+    }
+}
+

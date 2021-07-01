@@ -1,0 +1,96 @@
+.contentpage-cover-container{
+    display: flex;
+    flex-grow: 1;
+    height: calc(100vh - 4rem);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:RGB(21, 58, 67, 0.8);
+    background-blend-mode: multiply;
+}
+
+.contentpage-cover-content{
+    /* background: LINEAR-GRADIENT(TO top, RGB(0, 0, 0, 1), RGB(0, 0, 0, 0.6)); */
+    flex-grow: 1;
+    font-family: var(--home-cover-fontfamily);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 55rem;
+}
+
+.contentpage-cover-content h1{
+    font-size: 4rem;
+    font-family: var(--home-cover-heading-fontfamily);
+    margin: 0.6rem 0;
+}
+
+.contentpage-cover-content-details{
+    padding: 0rem 1rem 2rem 3rem;
+    background: none;
+    width: 35rem;
+}
+
+.contentpage-cover-small-details {
+    display: flex;
+    font-family: var(--home-cover-fontfamily);
+    white-space: pre;
+    flex-wrap: wrap;
+}
+.contentpage-cover-small-details label{
+    color:darkgray;
+}
+
+#contentpage-cover-runtime{
+    color:white;
+}
+
+#watch-trailer-btn{
+    margin: 3rem 0;
+    margin-right: 1rem;
+    padding: 0.7rem 2rem;
+    font-weight: bold;
+    background: var(--content-card-topbar-bg);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: var(--home-cover-heading-fontfamily);
+}
+
+#watch-trailer-btn:hover{
+    border: 1px solid var(--content-card-topbar-bg);
+    color: var(--content-card-topbar-bg);
+    background: none;
+}
+
+
+@media only screen and (max-width: 635px){
+    .contentpage-cover-content h1{
+        font-size: 3rem;
+    }
+    .contentpage-cover-content-details{
+        width: auto;
+        padding-right: 3rem;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .contentpage-cover-content h1{
+        font-size: 3rem;
+    }
+    .contentpage-cover-content-details{
+        padding-right: 1rem;
+        width: 80%;
+    }
+    :root{
+        font-size: 90%;
+    }
+
+}
+@media only screen and (max-width: 320px){
+    :root{
+        font-size: 80%;
+    }
+}

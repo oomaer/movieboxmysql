@@ -1,0 +1,107 @@
+.submenu-items-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 2rem;
+    
+}
+
+.sub-menu{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 3.5rem 0rem 1rem;
+}
+.sub-menu ul{
+    overflow:hidden;
+}
+.sub-menu-svg{
+    background: var(--submenu-svg-bgcolor);
+    color: var(--submenu-svg-fgcolor);
+    margin-right: calc(2rem - 16px);
+}
+
+.bi-fill{
+    background: none;
+    color: var(--submenu-svg-bgcolor);
+}
+
+.sub-menu-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sub-menu-title{
+   color: var(--submenu-title-color); 
+}
+
+.sub-menu-radio{
+    display: none;
+}
+
+.radio-btn-lbl{
+    /* pointer-events: none; */
+}
+.submenu-list-item{
+    margin: 0.6rem 0rem;
+}
+.submenu-list-item a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 90%;
+}
+.submenu-list-item a:hover{
+    transform:scale(1.2);
+    border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width: 1262px){
+    .sub-menu{
+        margin: 0rem 2.6rem 0rem 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 1175px){
+    .sub-menu{
+        margin: 0rem 2rem 0rem 0.8rem;
+        font-size: 87%;
+    }
+}
+
+@media only screen and (max-width: 1026px){
+    .sub-menu{
+        margin: 0px;  
+    }
+    .sub-menu-header{
+        font-size: 70%;  
+        padding: 0 1rem;
+        border-bottom: 1px solid var(--submenu-header-bordercolor);
+    }
+    .sub-menu-header:hover{
+        color: var(--logo-lbl-bg);
+    }
+    .submenu-items-list{
+        display: none;
+        /* transition: (0.2s ease-in-out); */
+        /* transform: translateX(-16rem); */
+        margin: 0;
+        padding-left: 3rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--submenu-itemlist-bottom-border-color);
+    }
+    .submenu-list-item{
+        padding: 0.2rem 0;
+    }
+    .sub-menu-radio:checked ~ .submenu-items-list{
+        /* transform: translate(0); */
+        display: block;
+    }
+    .sub-menu-radio:checked + label{
+        border-top: 1px dashed var(--submenu-header-border-color);
+        border-bottom: 1px dashed var(--submenu-header-border-color);
+    }
+    .sub-menu-header:hover{
+        background-color: var(--submenu-hover-color);
+    }
+    
+}

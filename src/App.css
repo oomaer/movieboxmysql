@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+:root{
+
+  --opensans: 'Open Sans', sans-serif;
+  --ubuntu: 'Ubuntu', sans-serif;
+  /*sign up/ sign in */
+  --background-color: black;
+  --registration-card-color: #f6f5f7;;
+  --registration-card-font-family: 'Montserrat', sans-serif;
+  --signup-signin-bg-image: url('./Profiling/lotrbg7.jpg');
+
+  /*navigation --------------------------*/
+  --nav-bg-color: rgb(0, 0, 0);
+  --nav-fg-color: #eaf0f6;
+  --menu-btn-color: #eaf0f6;
+  --logo-lbl-bg: #FB3E63;
+  --logo-lbl-fg: white; 
+  --logo-lbl-transition: #5BFFFF;
+  --logo-lbl-fontfamily: 'Poller One', cursive;
+  --nav-signin-icon-color: #5BFFFF;
+  --nav-signin-text-color: white;
+  --nav-signin-hover-color: #FB3E63;
+  --nav-signin-text-fontfamily: 'Montserrat', sans-serif;
+  --nav-rightbtns-border-color: #333232;
+  --nav-rightbtns-border-color-hover: #FB3E63;
+
+  /*drop down menu*/
+  --drop-down-bg: #1f1f1f;
+  --drop-down-fg: #eaf0f6;
+  --drop-down-fontfamily: 'Montserrat', sans-serif;
+  --submenu-logo-bordercolor: #333232;
+  --submenu-title-color: rgb(255, 255, 255); 
+  --submenu-svg-bgcolor: var(--logo-lbl-bg);
+  --submenu-svg-fgcolor: black;
+  --submenu-hover-color: #333232;
+  --submenu-header-border-color: #FB3E63;
+  --submenu-itemlist-bottom-border-color: #333232;
+
+  /*profile details */
+
+  --profile-icon-fg: #027db8;
+  --profile-icon-bg: #1D1E1E;
+  --profile-icon-name-color: #d2ebeb;
+  --profile-details-font-family: 'Montserrat', sans-serif;
+  --profile-items-icon-color: #FB3E63;
+  --profile-items-lbl-color: eaf0f6;
+  --profile-dropdown-bg: #1f1f1f;  
+  --profile-item-hover-color: #333232;
+
+
+  /*account settings */
+  --settings-bg: #cfcece;
+  --settings-fg: black;
+  --settings-fontfamily:  'Overpass', sans-serif;
+  --settings-profilecontent-bg: white;
+  --settings-edit-icon-fg: black;
+  --settings-lbls-border-color: rgb(133, 133, 133);
+  --settings-input-bg: #d6d4d4;
+  --settings-input-fg: black;
+  --settings-confirmbtn-bg: #4CAF50;
+  --settings-confirmbtn-fg: white;
+  --settings-confirmbtn-bg-hover: none;
+  --settings-confirmbtn-fg-hover: black;
+  --settings-helpcard-bg: #f6f5f7;
+  --settings-helpcard-fg: black;
+
+  --settings-statusmsg-fg: red;
+  --settings-statusmsg-fontfamily: 'Montserrat', sans-serif;
+
+
+  /*homepage */
+  --home-cover-bg-tint:  rgb(0,0,0,0);
+  --home-cover-text-bg:  LINEAR-GRADIENT(TO RIGHT top, RGB(0, 0, 0, 0.7), RGB(0, 0, 0, 0.7));
+  --home-cover-text-shadow:   0.05em 0 black,0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+  -0.05em -0.05em black,  -0.05em 0.05em black, 0.05em -0.05em black,  0.05em 0.05em black;
+  --home-cover-heading-fontfamily: 'Noto Sans', sans-serif;
+  --home-cover-fontfamily: 'Dosis', sans-serif;
+
+  /*footer */
+  --footer-bg: rgb(46, 10, 10);
+  --footer-icon-fg : white;
+  --footer-spanish-lbl-color: white;
+  --footer-english-lbl-color: rgb(200, 200, 200);
+  --footer-spanish-lbl-fontfamily: 'Dancing Script', cursive;
+  --footer-english-lbl-fontfamily: 'Montserrat', sans-serif;
+
+  /* Content Card */
+  --content-card-container-bg: black;
+  --content-card-container-fg: black;
+  /* --content-card-topbar-bg: #e32b37; */
+  --content-card-topbar-bg:#990033;
+  --content-card-topbar-fg: white;
+  --content-card-topbar-fg2: black;
+  --content-card-body-bg: #0d1117;
+  --content-card-body-fg: #f0f6fc;
+  --content-card-body-fg2: #9b9898;
+  --content-card-body-fg3: #e7e3e3;
+  --content-card-body-pictures-bg: #202225;
+  --content-overivew-fontfamily: 'Baloo 2', cursive;
+
+
+
+
+}
+
+.app{
+  background-color: var(--background-color);
+
+}

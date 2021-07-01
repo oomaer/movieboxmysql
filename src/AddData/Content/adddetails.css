@@ -1,0 +1,14 @@
+.add-content-details-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--settings-bg);
+    color: var(--settings-fg);
+}
+.add-content-details-main{
+    width: 1000px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}

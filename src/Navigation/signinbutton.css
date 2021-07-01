@@ -1,0 +1,22 @@
+.nav-signinbtn{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-family: var(--nav-signin-text-fontfamily);
+    color: var(--nav-signin-text-color);
+}
+
+.nav-signinbtnlbl{
+    margin: 0 0.7rem 0 0.5rem;
+    padding-right: 0.3rem;
+}
+
+.nav-signinbtn:hover{
+    color: var(--nav-signin-hover-color);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.bi-arrow-bar-right{
+    padding-left: 0.3rem;
+}
