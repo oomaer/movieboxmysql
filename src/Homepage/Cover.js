@@ -10,7 +10,7 @@ const Cover = () => {
     const [currentIndex, setCurrentIndex]  = useState(0);
     const [animation_class, setAnimationClass] = useState('');
     const [loading, setLoading] = useState(true);
-    
+
     const handlers = useSwipeable({
         onSwipedLeft: () => changeCover(currentIndex + 1),
         onSwipedRight: () => changeCover(currentIndex - 1),
@@ -26,13 +26,10 @@ const Cover = () => {
                     setLoading(false);
             }))
             .catch(err => console.log(err)); 
-            this.interval = setInterval(() => this.setState({currentIndex : (this.state.currentIndex+1) % 6}), 4000);
-    }, []);
-        
 
-    componentWillUnmount() {
-        clearInterval(this.interval);
-    }
+
+    }, []);
+
 
     const changeCover = (index) => {
         index = index % 6;

@@ -25,7 +25,6 @@ const CardsSection3 = () => {
                 }
                 else{
                     response.json().then(result => {
-                        console.log(result)
                         setData(result)
                     })
                 }
