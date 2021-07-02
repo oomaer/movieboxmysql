@@ -26,14 +26,13 @@ const Cover = () => {
                     setLoading(false);
             }))
             .catch(err => console.log(err)); 
+            this.interval = setInterval(() => this.setState({currentIndex : (this.state.currentIndex+1) % 6}), 4000);
     }, []);
-
-        // this.interval = setInterval(() => this.setState({currentIndex : (this.state.currentIndex+1) % 6}), 6000);
         
 
-    // componentWillUnmount() {
-    //     clearInterval(this.interval);
-    // }
+    componentWillUnmount() {
+        clearInterval(this.interval);
+    }
 
     const changeCover = (index) => {
         index = index % 6;
