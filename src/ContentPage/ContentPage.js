@@ -31,7 +31,7 @@ class ContentPage extends Component {
     }
 
     getData = (id) => {
-        fetch('http://localhost:4000/getContentData', {
+        fetch('https://moviebox-demo-webapp.herokuapp.com/getContentData', {
             method: 'post',
             headers : {'Content-Type' : 'application/json'},
             body: JSON.stringify({
@@ -53,7 +53,7 @@ class ContentPage extends Component {
         });
 
         
-        fetch('http://localhost:4000/getContentDetails', {
+        fetch('https://moviebox-demo-webapp.herokuapp.com/getContentDetails', {
             method: 'post',
             headers : {'Content-Type' : 'application/json'},
             body: JSON.stringify({

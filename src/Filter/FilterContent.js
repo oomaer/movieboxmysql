@@ -9,7 +9,7 @@ const FilterContent = ({type}) => {
     const [found, setFound] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:4000/filterContent', {
+        fetch('https://moviebox-demo-webapp.herokuapp.com/filterContent', {
                 method: 'post',
                 headers : {'Content-Type' : 'application/json'},
                 body: JSON.stringify({

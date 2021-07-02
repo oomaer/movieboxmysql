@@ -42,7 +42,7 @@ const NavSearchBar = () => {
             setSearchedArr([]);
         }
         else{
-            fetch('http://localhost:4000/search', {
+            fetch('https://moviebox-demo-webapp.herokuapp.com/search', {
                     method: 'post',
                     headers : {'Content-Type' : 'application/json'},
                     body: JSON.stringify({

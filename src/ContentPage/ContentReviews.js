@@ -15,7 +15,7 @@ const ContentReviews = ({user}) => {
     const [statusMsg, setStatusMsg] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:4000/getContentReviews', {
+        fetch('https://moviebox-demo-webapp.herokuapp.com/getContentReviews', {
                 method: 'post',
                 headers : {'Content-Type' : 'application/json'},
                 body: JSON.stringify({
@@ -64,7 +64,7 @@ const ContentReviews = ({user}) => {
                 day = '0' + day;
             }
             let datetoday = `${year}-${month}-${day}`;
-            fetch('http://localhost:4000/addContentReview', {
+            fetch('https://moviebox-demo-webapp.herokuapp.com/addContentReview', {
                 method: 'post',
                 headers : {'Content-Type' : 'application/json'},
                 body: JSON.stringify({
@@ -116,7 +116,7 @@ const ContentReviews = ({user}) => {
                 day = '0' + day;
             }
             let datetoday = `${year}-${month}-${day}`;
-            fetch('http://localhost:4000/editContentReview', {
+            fetch('https://moviebox-demo-webapp.herokuapp.com/editContentReview', {
                 method: 'post',
                 headers : {'Content-Type' : 'application/json'},
                 body: JSON.stringify({
@@ -145,7 +145,7 @@ const ContentReviews = ({user}) => {
     }
 
     const onDeleteClick = () => {
-        fetch('http://localhost:4000/deleteContentReview', {
+        fetch('https://moviebox-demo-webapp.herokuapp.com/deleteContentReview', {
             method: 'post',
             headers : {'Content-Type' : 'application/json'},
             body: JSON.stringify({

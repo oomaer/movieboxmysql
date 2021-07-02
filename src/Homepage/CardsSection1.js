@@ -11,7 +11,7 @@ const CardsSection1 = ({filter, classType}) => {
     const [scrollAnimation, setScrollAnimation] = useState(['zoom-in-right', 'zoom-in-left']);
 
     useEffect(() => {
-        fetch('http://localhost:4000/filterContent', {
+        fetch('https://moviebox-demo-webapp.herokuapp.com/filterContent', {
                 method: 'post',
                 headers : {'Content-Type' : 'application/json'},
                 body: JSON.stringify({

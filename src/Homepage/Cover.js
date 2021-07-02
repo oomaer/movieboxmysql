@@ -18,7 +18,7 @@ const Cover = () => {
     });
 
     useEffect(() => {
-        fetch('http://localhost:4000/getrecommended')
+        fetch('https://moviebox-demo-webapp.herokuapp.com/getrecommended')
             .then(response => response.json()
                 .then(result => {
                     setData(result);

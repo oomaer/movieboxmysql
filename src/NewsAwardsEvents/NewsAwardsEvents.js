@@ -11,7 +11,7 @@ const NewsAwardsEvents = ({type, admin}) => {
     const [found, setFound] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:4000/getNewsAwardsEvents', {
+        fetch('https://moviebox-demo-webapp.herokuapp.com/getNewsAwardsEvents', {
                 method: 'post',
                 headers : {'Content-Type' : 'application/json'},
                 body: JSON.stringify({

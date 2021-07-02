@@ -9,7 +9,7 @@ const FilterCelebrity = ({type}) => {
     const [found, setFound] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:4000/filterCelebrity', {
+        fetch('https://moviebox-demo-webapp.herokuapp.com/filterCelebrity', {
                 method: 'post',
                 headers : {'Content-Type' : 'application/json'},
                 body: JSON.stringify({

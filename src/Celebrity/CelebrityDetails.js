@@ -10,7 +10,7 @@ const CelebrityDetails = ({admin}) => {
     const [found, setFound] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:4000/getCelebrity', {
+        fetch('https://moviebox-demo-webapp.herokuapp.com/getCelebrity', {
                 method: 'post',
                 headers : {'Content-Type' : 'application/json'},
                 body: JSON.stringify({
