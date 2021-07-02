@@ -148,9 +148,11 @@
     display: flex;
     flex-wrap: wrap;
 }
-#contentdetails-contentelement-tagline{
+#contentdetails-contentelement-tagline p{
     color: var(--content-card-body-fg2);
+    margin: 0;
 }
+
 .contentdetails-contentelement label{
     white-space: pre;
     color: var(--content-card-body-fg2);
