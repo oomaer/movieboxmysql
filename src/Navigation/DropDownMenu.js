@@ -41,7 +41,7 @@ const DropDownMenu = ({closeMenu, admin}) => {
     return(
         <div className = 'drop-down-menu' ref = {wrapperRef}>
             <div className = 'logo-closebtn'>
-                <Link to = '/home'><h1 className = 'dropdown-logo logo'>Movie Box</h1></Link> 
+                <Link to = '/home'><h1 onClick = {closeMenu} className = 'dropdown-logo logo'>Movie Box</h1></Link> 
                 <CloseButton closeMenu = {closeMenu} /> 
             </div>
 

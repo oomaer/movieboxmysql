@@ -1,6 +1,7 @@
 .nav-searchbar{
     display:flex;
     align-items: center;
+    flex-grow: 1;
 }
 #nav-search-container{
     font-family: var(--nav-signin-text-fontfamily);
@@ -150,6 +151,9 @@
     }
     #nav-search-container{
         display:none;
+    }
+    .nav-searchbar > :nth-child(3){
+        justify-self: flex-end;
     }
 
 }

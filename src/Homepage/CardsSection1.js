@@ -52,7 +52,7 @@ const CardsSection1 = ({filter, classType}) => {
                 </div>
                 <div className = {`cardsection1-cards cardsection1-cards-${classType}`}>
                     <Link to = {`/content/${data[0].ID}`}>
-                        <div className = 'cardsection1-leftcard-container' data-aos = {scrollAnimation[0]} data-aos-duration="800" 
+                        <div className = 'cardsection1-leftcard-container' data-aos = {scrollAnimation[0]} data-aos-duration="1000" 
                         style = {{'background-image' : `LINEAR-GRADIENT(46deg, RGB(0, 0, 0, 0.7) 10%, transparent 90%),
                                                         url(${data[0].COVER})`}}>
                             <div className = 'cardsection1-leftcard-content' >
@@ -61,7 +61,7 @@ const CardsSection1 = ({filter, classType}) => {
                             </div>
                         </div>
                     </Link>
-                    <div data-aos = {scrollAnimation[1]} className = 'cardsection1-rightcards-container'>
+                    <div data-aos = {scrollAnimation[1]} data-aos-duration="800"  className = 'cardsection1-rightcards-container'>
                         <div className = 'cardsection1-rightcards-content'>
                             {data.map((content, index) => {
                                 if(index !== 0){

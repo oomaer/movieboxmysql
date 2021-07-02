@@ -3,6 +3,7 @@ import {withRouter} from 'react-router-dom';
 import './contentpage.css';
 import ContentPageCover from './ContentPageCover';
 import ContentDetailsCard from './ContentDetailsCard';
+import LoadingScreen from '../LoadingScreen';
 class ContentPage extends Component {
 
     constructor(props){
@@ -21,7 +22,8 @@ class ContentPage extends Component {
                         locations: [],
                         production_co: [],
                         seasons: []},
-            found: true
+            found: true,
+            loading: true
             
         }
     }
@@ -39,11 +41,11 @@ class ContentPage extends Component {
             })
         }).then(response => {
             if(!response.ok){  
-                this.setState({found: false});  
+                this.setState({found: false, loading: false});  
             }
             else{
                 response.json().then(result => {
-                    this.setState({content: result})
+                    this.setState({content: result, loading: false})
                 })
             }
         
@@ -83,7 +85,11 @@ class ContentPage extends Component {
 
 
     render(){
-        const {content, details, found} = this.state
+        const {content, details, found, loading} = this.state
+        if(loading){
+            return <LoadingScreen />
+        }
+        else{
         return(
             <div className = 'contentpage-container'>
                 {found === false ? (<h1>404 Not Found</h1>)
@@ -95,6 +101,7 @@ class ContentPage extends Component {
                 )}
             </div>
         )
+                }
     }
 }
 

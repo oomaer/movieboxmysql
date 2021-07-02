@@ -93,7 +93,7 @@
     .nav-justify-center{
         flex-grow: 1;
         display:flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
     
 }
