@@ -148,6 +148,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+#contentdetails-contentelement-tagline{
+    color: var(--content-card-body-fg2);
+}
 .contentdetails-contentelement label{
     white-space: pre;
     color: var(--content-card-body-fg2);

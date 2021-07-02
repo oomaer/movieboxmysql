@@ -151,7 +151,7 @@ const ContentDetailsCard = ({content, details}) => {
                                 </div>
                                     <div className = 'contentdetails-contentelement'>
                                     <h4 className = 'contentdetails-contentelement-headerlbl'>Tagline:  </h4> 
-                                    <label>{content.TAGLINE}</label>   
+                                    <p id = 'contentdetails-contentelement-tagline'>{content.TAGLINE}</p>   
                                 </div>
                             </div>
 
