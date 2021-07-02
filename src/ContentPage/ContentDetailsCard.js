@@ -75,7 +75,9 @@ const ContentDetailsCard = ({content, details}) => {
                                                 else{
                                                     return (<label className = 'contentdetails-fg2'>, {item.NAME} </label>)
                                                 }
-                                                
+                                            }
+                                            else{
+                                                return null;
                                             }
                                         })}
                                     </div>
